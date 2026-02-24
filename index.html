@@ -168,6 +168,40 @@
             font-weight: 300; color: var(--gold);
         }
 
+        /* ── AI THERAPY ── */
+        .ai-therapy { background: var(--pearl); }
+        .therapy-grid {
+            max-width: 1100px; margin: 0 auto;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+        }
+        .therapy-card {
+            background: var(--soft-gray); border-radius: 20px;
+            padding: 32px 28px; border: 1px solid rgba(197,160,89,0.12);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .therapy-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+        .therapy-card .card-icon { font-size: 2rem; margin-bottom: 12px; display: block; }
+        .therapy-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem; font-weight: 600; color: var(--gold);
+            margin-bottom: 10px;
+        }
+        .therapy-card p {
+            font-size: 0.86rem; line-height: 1.7; color: var(--text-light); font-weight: 300;
+        }
+        .therapy-subhead {
+            font-size: 1.05rem; font-weight: 300; color: var(--text-light);
+            text-align: center; max-width: 540px; margin: -40px auto 60px;
+            line-height: 1.7;
+        }
+        .therapy-tagline {
+            text-align: center; margin-top: 56px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(1.4rem, 3vw, 2rem);
+            font-weight: 300; font-style: italic; color: var(--gold);
+        }
+
         /* ── FOOTER ── */
         footer {
             text-align: center; padding: 60px 24px;
@@ -269,6 +303,41 @@
     <blockquote>"My AI noticed something I missed for 25 years: every major relationship followed the same pattern. The distance, the over-giving, the collapse. Seeing it mapped out changed everything."</blockquote>
     <p class="attribution">— Anonymous, 52</p>
     <p class="therapy-line">The therapy that never forgets.</p>
+</section>
+
+<!-- AI THERAPY -->
+<section class="ai-therapy">
+    <p class="section-label">Your AI Copilot</p>
+    <h2 class="section-title">AI Therapy That Actually Knows You</h2>
+    <p class="therapy-subhead">Most wellness apps track what you do. We track why you do it.</p>
+    <div class="therapy-grid">
+        <div class="therapy-card">
+            <span class="card-icon">🔍</span>
+            <h3>Pattern Recognition</h3>
+            <p>Surfaces recurring cycles in relationships, spending, health, and behavior that you can't see when you're living inside them.</p>
+        </div>
+        <div class="therapy-card">
+            <span class="card-icon">📊</span>
+            <h3>Insight Summaries</h3>
+            <p>Distills weeks of conversations into clear, actionable insights about who you are and what you're doing.</p>
+        </div>
+        <div class="therapy-card">
+            <span class="card-icon">🪞</span>
+            <h3>Gentle Mirror</h3>
+            <p>Reflects back what it sees without judgment, so you can decide what to change.</p>
+        </div>
+        <div class="therapy-card">
+            <span class="card-icon">🕐</span>
+            <h3>Always Available</h3>
+            <p>3 AM breakdown? Tuesday morning clarity? It's there.</p>
+        </div>
+        <div class="therapy-card">
+            <span class="card-icon">🔒</span>
+            <h3>Private & Safe</h3>
+            <p>Your data stays yours. No waiting rooms. No insurance codes.</p>
+        </div>
+    </div>
+    <p class="therapy-tagline">The therapy that never forgets.</p>
 </section>
 
 <!-- FOOTER -->
